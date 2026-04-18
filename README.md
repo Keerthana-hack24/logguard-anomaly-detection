@@ -1,4 +1,4 @@
-**LogGuard: AI-Powered Login Anomaly Detection**:
+## **LogGuard: AI-Powered Login Anomaly Detection**:
 
 <img width="600" height="200" alt="Screenshot 2026-04-18 170603" src="https://github.com/user-attachments/assets/81c227f8-75dc-45d9-9217-ed1e050d8808" />
 
@@ -12,12 +12,12 @@ and applies the anomaly detection model to identify potentially malicious activi
 
 This project also includes a dashboard that displays the flagged users to help understand the investigation better for analysts.
 
-**Project Overview:**
+## **Project Overview:**
 In modern authentication systems, the large volume of data makes it difficult for manual detection. LogGuard addresses this problem by applying behavioural analytics and machine learning to identify patterns and flag abnormal users.
 
-**Tech Stack**: Python | Pandas | Scikit-Learn (Isolation Forest) | Streamlit | Matplotlib
+## **Tech Stack**: Python | Pandas | Scikit-Learn (Isolation Forest) | Streamlit | Matplotlib
 
-**Key Features:**
+## **Key Features:**
 • Behavioral feature engineering from login activity logs
 • Entropy-based diversity metrics for IP addresses, countries, and devices
 • Isolation Forest anomaly detection model
@@ -25,7 +25,7 @@ In modern authentication systems, the large volume of data makes it difficult fo
 • Interactive Streamlit dashboard for security analysis
 • Visualization of anomalous behavior patterns
 
-**System Architecture:**
+## **System Architecture:**
 
 <img width="383" height="513" alt="image" src="https://github.com/user-attachments/assets/fd39b54b-c808-4c76-8ce6-700b9ecea550" />
 
@@ -33,13 +33,13 @@ In modern authentication systems, the large volume of data makes it difficult fo
 
 
 
-**Parsing the dataset:**
+## **Parsing the dataset:**
 
 The main challenge while doing this project was that the original dataset has around 33 million records, so only around 1 million rows were used which was created in the form of parsed_logs.csv. Further, a sampling technique was applied on this csv file to take records of 1000 users and store all their records in the form of parsed_logs_sample.csv (this can be found in the data/). Sampling 1000 random users in this way without taking random records ensured the key principle of cybersecurity analysis:
 
 "An individual log is baseless, but the real analysis comes from the pattern of logs"
 
-**Machine Learning Model:**
+## **Machine Learning Model:**
 
 The project uses Isolation Forest, an unsupervised anomaly detection algorithm.
 Isolation Forest works by randomly partitioning the feature space and identifying observations that can be isolated quickly. Anomalous behavior typically requires fewer splits to isolate, resulting in higher anomaly scores.
@@ -54,7 +54,7 @@ The model produces:
 • Risk scores scaled from 0–100
 
 
-**Feature Engineering**:
+## **Feature Engineering**:
 
 User behavior is summarized using aggregated features such as:
 • Login Activity
@@ -74,12 +74,12 @@ User behavior is summarized using aggregated features such as:
 These features capture patterns that may indicate abnormal or suspicious login behavior.
 
 
-**Dataset**:
+## **Dataset**:
 This project was developed using authentication log data derived from the RBA dataset. Because the original dataset is very large, this repository includes a reduced sample for demonstration and reproducibility:
 https://www.kaggle.com/datasets/dasgroup/rba-dataset
 
 
-**Future Improvements:**
+## **Future Improvements:**
 
 1. Evaluating model predictions against labeled attack data
 2. Incorporating temporal sequence modeling
