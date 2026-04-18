@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+.ipynb_checkpoints/
+
+data/rba-dataset.csv
+data/parsed_logs.csv
